@@ -24,6 +24,8 @@ async def my_event_handler(event):
         await event.edit("Message Edited!")
     elif event.raw_text == "سلام":
         await event.reply("دلام عجیجم")
+    elif event.raw_text == "بای":
+        await event.reply("بابای اوجملم")
     elif event.raw_text == "delete":
         await event.delete()
     if 'hello' in event.raw_text:
